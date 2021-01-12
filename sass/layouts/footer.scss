@@ -5,6 +5,9 @@ footer {
     h1 {
         font-family: 'Shrikhand' , monospace;
     }
+    li {
+        line-height: 2rem;
+    }
     li:nth-child(1) i {
         margin-right: 1rem;
         font-size: 0.8rem;
