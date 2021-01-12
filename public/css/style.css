@@ -117,7 +117,7 @@ header img {
 }
 
 .working {
-  margin: 3.4rem 1.3rem 0 1.3rem;
+  margin: 3.4rem 1.3rem 5rem 1.3rem;
 }
 .working_title {
   font-size: 1.4rem;
@@ -185,6 +185,59 @@ header img {
   color: white;
   border-radius: 50%;
   padding: 0.2rem 0.4rem;
+}
+
+.restaurant {
+  background-color: #f2f2f2;
+  margin-top: 2rem;
+  padding: 2rem 1.3rem 4rem 1.3rem;
+}
+.restaurant_title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1rem 0 1.7rem 0;
+}
+.restaurant img {
+  border-radius: 20px 20px 0 0;
+  height: 11.5rem;
+  width: 100%;
+  object-fit: cover;
+}
+.restaurant_name {
+  font-weight: 600;
+  font-size: 1.12rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+.restaurant i {
+  position: relative;
+  left: 19.3rem;
+  bottom: 2.2rem;
+  font-size: 1.5rem;
+}
+.restaurant_place {
+  padding-left: 1rem;
+  padding-bottom: 0rem;
+}
+.restaurant_first {
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+.restaurant_second {
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+.restaurant_third {
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+.restaurant_fourth {
+  background-color: white;
+  border-radius: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
