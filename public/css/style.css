@@ -192,6 +192,20 @@ header img {
   padding: 0.2rem 0.5rem 0.25rem 0.5rem;
 }
 
+@keyframes like {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  75% {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 .restaurant {
   background-color: #f2f2f2;
   margin-top: 2rem;
@@ -208,17 +222,24 @@ header img {
   width: 100%;
   object-fit: cover;
 }
-.restaurant i {
+.restaurant_desc {
+  display: grid;
+  grid-template: 1fr 1fr/1fr 1fr;
+  grid-template-areas: "name like" "place like";
+}
+.restaurant_desc .fas {
+  color: #9356dc;
+  opacity: 0;
+}
+.restaurant_desc .fas:hover {
+  animation: like 400ms forwards;
+}
+.restaurant_desc i {
   grid-area: like;
   justify-self: end;
   align-self: center;
   font-size: 1.8rem;
   margin-right: 1.5rem;
-}
-.restaurant_desc {
-  display: grid;
-  grid-template: 1fr 1fr/1fr 1fr;
-  grid-template-areas: "name like" "place like";
 }
 .restaurant_name {
   font-weight: 600;
