@@ -13,42 +13,52 @@
         width: 100%;
         object-fit: cover;
     }
+    i {
+        grid-area: like;
+        justify-self: end;
+        align-self: center;
+        font-size: 1.8rem;
+        margin-right: 1.5rem;
+    }
+    &_desc {
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr;
+        grid-template-areas: 
+            "name like"
+            "place like";
+    }
     &_name {
         font-weight: 600;
         font-size: 1.2rem;
         padding-left: 1rem;
         padding-top: 1rem;
-        &::after {
-            font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f004";
-            position: relative;
-            font-size: 1.4rem;
-            left: 8.5rem;
-            top: 0.5rem;
-        }
+        grid-area: name;
     }
     &_place {
         padding-left: 1rem;
-        padding-bottom: 1.5rem;
+        padding-bottom: 1rem;
         font-size: 1.1rem;
+        grid-area: place;
     }
     &_first {
         background-color: white;
         border-radius: 20px;
-        margin-bottom: 1rem;
+        margin-bottom: 1.1rem;
     }
     &_second {
         background-color: white;
         border-radius: 20px;
-        margin-bottom: 1rem;
+        margin-bottom: 1.1rem;
     }
     &_third {
         background-color: white;
         border-radius: 20px;
-        margin-bottom: 1rem;
+        margin-bottom: 1.1rem;
         
     }
     &_fourth {
         background-color: white;
         border-radius: 20px;
+        margin-bottom: 1.1rem;
     }
 }

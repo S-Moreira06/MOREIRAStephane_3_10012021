@@ -27,12 +27,17 @@
             font-size: 1.15rem;
         }
         &-btn {
-            background: linear-gradient(to bottom right, $cd-secondary, $cd-primary);
+            background: $cd-btn-exploration;
             color: white;
             border: none;
             border-radius: 50px;
             padding: 1rem 1.5rem;
             margin: 1rem;
+            cursor: pointer;
+            &:hover {
+                opacity: 0.8;
+                transition: opacity 800ms;
+            }
         }
     }
 }

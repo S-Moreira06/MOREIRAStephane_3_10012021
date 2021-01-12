@@ -1,3 +1,7 @@
 $cd-primary: #9356dc;
+$cd-primary-light: lighten( $cd-primary, 20%);
 $cd-secondary: #ff79da;
+$cd-secondary-light: lighten( $cd-secondary, 20%);
 $cd-tertiary: #99e2d0;
+$cd-btn-exploration: linear-gradient(to bottom right, $cd-secondary, $cd-primary);
+$cd-btn-exploration-hover: linear-gradient(to bottom right, $cd-secondary-light, $cd-primary-light);
