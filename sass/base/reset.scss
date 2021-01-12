@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+// Remove default padding 
+ul[class],ol[class] {
+  padding: 0;
+}
+ul,ol {
+  padding: 0;
+}
+//Reset font-size 
+h1,h2,h3,h4,h5,h6,p,ul[class],ul,ol[class],ol,li,figure,figcaption,blockquote,dl,dd {
+  font-size: 1rem;
+}
+// Remove list-style 
+ul,ol {
+  list-style-type: none;
+}
+// Remove default margin 
+body,h1,h2,h3,h4,h5,h6,p,ul[class],ol[class],li,figure,figcaption,blockquote,dl,dd {
+    margin: 0;
+}
+// Remove list styles on ul, ol elements with a class attribute 
+ul[class],ol[class] {
+    list-style: none;
+}
+// Make images easier to work with 
+img {
+    max-width: 100%;
+    display: block; 
+}
+// Inherit fonts for inputs and buttons 
+input,button,textarea,select {
+    font: inherit;
+}
+// Remove link style
+a {
+    text-decoration: none;
+    color: inherit;
+}
+/* end reset */
