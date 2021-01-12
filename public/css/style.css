@@ -46,16 +46,16 @@ a {
 /* end reset */
 @font-face {
   font-family: "Shrikhand";
-  src: url("font/shikhand/Shrikhand-Regular.eot");
-  src: url("font/shikhand/Shrikhand-Regular.eot?#iefix") format("embedded-opentype"), url("font/shikhand/Shrikhand-Regular.woff2") format("woff2"), url("font/shikhand/Shrikhand-Regular.woff") format("woff"), url("font/shikhand/Shrikhand-Regular.svg#Shrikhand-Regular") format("svg");
+  src: url("../../public/font/shikhand/Shrikhand-Regular.eot");
+  src: url("../../public/font/shikhand/Shrikhand-Regular.eot?#iefix") format("embedded-opentype"), url("../../public/font/shikhand/Shrikhand-Regular.woff2") format("woff2"), url("../../public/font/shikhand/Shrikhand-Regular.woff") format("woff"), url("../../public/font/shikhand/Shrikhand-Regular.svg#Shrikhand-Regular") format("svg");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "roboto";
-  src: url("font/roboto/roboto_regular/roboto-regular-webfont.eot");
-  src: url("font/roboto/roboto_regular/roboto-regular-webfont.eot?#iefix") format("embedded-opentype"), url("font/roboto/roboto_regular/roboto-regular-webfont.woff2") format("woff2"), url("font/roboto/roboto_regular/roboto-regular-webfont.woff") format("woff"), url("font/roboto/roboto_regular/roboto-regular-webfont.svg#roboto-regular-webfont") format("svg");
+  src: url("../../public/font/roboto/roboto_regular/roboto-regular-webfont.eot");
+  src: url("../../public/font/roboto/roboto_regular/roboto-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../public/font/roboto/roboto_regular/roboto-regular-webfont.woff2") format("woff2"), url("../../public/font/roboto/roboto_regular/roboto-regular-webfont.woff") format("woff"), url("../../public/font/roboto/roboto_regular/roboto-regular-webfont.svg#roboto-regular-webfont") format("svg");
   font-weight: normal;
 }
 :root {
@@ -190,7 +190,7 @@ header img {
 .restaurant {
   background-color: #f2f2f2;
   margin-top: 2rem;
-  padding: 2rem 1.3rem 4rem 1.3rem;
+  padding: 2rem 1.3rem 3rem 1.3rem;
 }
 .restaurant_title {
   font-size: 1.5rem;
@@ -238,6 +238,23 @@ header img {
 .restaurant_fourth {
   background-color: white;
   border-radius: 20px;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 1.4rem;
+}
+footer h1 {
+  font-family: "Shrikhand", monospace;
+}
+footer li:nth-child(1) i {
+  margin-right: 1rem;
+  font-size: 0.8rem;
+}
+footer li:nth-child(2) i {
+  font-size: 0.6rem;
+  margin-right: 0.91rem;
 }
 
 /*# sourceMappingURL=style.css.map */
