@@ -116,4 +116,75 @@ header img {
   margin: 1rem;
 }
 
+.working {
+  margin: 3.4rem 1.3rem 0 1.3rem;
+}
+.working_title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+.working_first {
+  background-color: #f6f6f6;
+  padding: 1.8rem 0.5rem;
+  margin-left: 0.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 20px;
+  font-weight: bold;
+}
+.working_first i {
+  margin-right: 1.7rem;
+  font-size: 1.3rem;
+}
+.working_first::before {
+  content: "1";
+  position: relative;
+  right: 1.2rem;
+  background-color: #9356dc;
+  color: white;
+  border-radius: 50%;
+  padding: 0.2rem 0.4rem;
+}
+.working_second {
+  background-color: #f6f6f6;
+  padding: 1.8rem 0.5rem;
+  margin-left: 0.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 20px;
+  font-weight: bold;
+}
+.working_second i {
+  margin-right: 1.7rem;
+  font-size: 1.3rem;
+}
+.working_second::before {
+  content: "2";
+  position: relative;
+  right: 1.2rem;
+  background-color: #9356dc;
+  color: white;
+  border-radius: 50%;
+  padding: 0.2rem 0.4rem;
+}
+.working_third {
+  background-color: #f6f6f6;
+  padding: 1.8rem 0.5rem;
+  margin-left: 0.5rem;
+  border-radius: 20px;
+  font-weight: bold;
+}
+.working_third i {
+  margin-right: 1.7rem;
+  font-size: 1.3rem;
+}
+.working_third::before {
+  content: "3";
+  position: relative;
+  right: 1.2rem;
+  background-color: #9356dc;
+  color: white;
+  border-radius: 50%;
+  padding: 0.2rem 0.4rem;
+}
+
 /*# sourceMappingURL=style.css.map */
