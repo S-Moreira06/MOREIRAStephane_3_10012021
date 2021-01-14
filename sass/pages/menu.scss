@@ -1,0 +1,35 @@
+//header
+.menu_header {
+    display: flex;
+    a{
+        margin: auto 0 auto 2rem;
+
+    }
+}
+
+//img
+.menu_picture {
+    position: relative;
+    h1 {
+        display: grid;
+        grid-template-areas:
+            "title like" ;
+        font-family: 'shrikhand';
+        font-size: 1.5rem;
+        position: absolute;
+        bottom: 0rem;/*sans ca le text est soit trop haut soit trop bas*/
+        background-color: #f6f6f6;
+        border-radius: 30px 30px 0 0;
+        padding: 1rem ;
+        width: 100%;
+        grid-area: title;
+        @include like;
+    }
+
+}
+//bloc_page
+
+.bloc_page {
+    background-color: #f6f6f6;
+}
+
