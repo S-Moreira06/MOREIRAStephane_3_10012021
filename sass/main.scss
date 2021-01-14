@@ -2,9 +2,11 @@
 @import "./base/typography";
 @import "./utils/variable";
 @import "./utils/keyframes";
+@import "./utils/mixin";
 @import "./base/base";
 @import "./layouts/header";
 @import "./layouts/exploration";
 @import "./layouts/working";
 @import "./layouts/restaurant";
 @import "./layouts/footer";
+@import "./pages/menu.scss"

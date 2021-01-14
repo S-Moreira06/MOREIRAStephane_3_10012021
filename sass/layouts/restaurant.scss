@@ -34,20 +34,7 @@
         grid-template-areas: 
             "name like"
             "place like";
-            .fas {
-                color: /*linear-gradient($cd-primary,$cd-secondary)*/ $cd-primary;
-                opacity: 0;
-                &:hover {
-                    animation: like 400ms forwards;
-                }
-            }
-            i {
-                grid-area: like;
-                justify-self: end;
-                align-self: center;
-                font-size: 1.8rem;
-                margin-right: 1.5rem;
-            }    
+        @include like;
     }
     &_name {
         font-weight: 600;
