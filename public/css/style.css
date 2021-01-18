@@ -296,10 +296,18 @@ footer li:nth-child(2) i {
 }
 
 .menu_header {
-  display: flex;
+  margin: 0 auto 1rem auto;
+  /*&::before {
+      font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f060";
+      position: relative;
+      top: 1.5rem;
+      left: 2rem
+  }*/
 }
-.menu_header a {
-  margin: auto 0 auto 2rem;
+.menu_header i {
+  position: relative;
+  top: 1.5rem;
+  left: 2rem;
 }
 
 .menu_picture {
@@ -309,7 +317,7 @@ footer li:nth-child(2) i {
   display: grid;
   grid-template-areas: "title like";
   font-family: "shrikhand";
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   position: absolute;
   bottom: 0rem;
   /*sans ca le text est soit trop haut soit trop bas*/
