@@ -1,0 +1,42 @@
+
+  #loaderContainer {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    left: 16vh;
+    top: 15vh;
+    animation: hideLoader 1ms 5000ms 1 normal forwards;
+  }
+  
+  .loader,
+  .loader::before,
+  .loader::after {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    animation: loading 2000ms backwards infinite ease-in-out alternate;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .loader::before,
+  .loader::after {
+    content: '';
+    display: block;
+  }
+  
+  .loader {
+    background-color: #9356DC;
+  }
+  .loader::before {
+    background-color: #FF79DA;
+    animation-delay: 400ms;
+  }
+  .loader::after {
+    background-color: #99E2D0;
+    animation-delay: 800ms;
+  }
+  
+  

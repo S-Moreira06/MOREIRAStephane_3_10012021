@@ -58,12 +58,47 @@ a {
   src: url("../../public/font/roboto/roboto_regular/roboto-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../public/font/roboto/roboto_regular/roboto-regular-webfont.woff2") format("woff2"), url("../../public/font/roboto/roboto_regular/roboto-regular-webfont.woff") format("woff"), url("../../public/font/roboto/roboto_regular/roboto-regular-webfont.svg#roboto-regular-webfont") format("svg");
   font-weight: normal;
 }
+@keyframes loading {
+  0% {
+    width: 0px;
+    height: 0px;
+  }
+  60% {
+    width: 100px;
+    height: 100px;
+  }
+  100% {
+    width: 0px;
+    height: 0px;
+  }
+}
+@keyframes hideLoader {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+@keyframes showContent {
+  0% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
 :root {
   font-size: 15px;
 }
 
 body {
   font-family: "roboto", sans-serif;
+}
+
+.bloc_page {
+  visibility: hidden;
+  animation: showContent 1ms 5000ms 1 forwards;
 }
 
 header {
@@ -393,6 +428,48 @@ h2 {
 .menu-btn:hover {
   opacity: 0.7;
   transition: opacity 800ms;
+}
+
+#loaderContainer {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  left: 16vh;
+  top: 15vh;
+  animation: hideLoader 1ms 5000ms 1 normal forwards;
+}
+
+.loader,
+.loader::before,
+.loader::after {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  animation: loading 2000ms backwards infinite ease-in-out alternate;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loader::before,
+.loader::after {
+  content: "";
+  display: block;
+}
+
+.loader {
+  background-color: #9356DC;
+}
+
+.loader::before {
+  background-color: #FF79DA;
+  animation-delay: 400ms;
+}
+
+.loader::after {
+  background-color: #99E2D0;
+  animation-delay: 800ms;
 }
 
 /*# sourceMappingURL=style.css.map */

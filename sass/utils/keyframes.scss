@@ -1,0 +1,32 @@
+@keyframes loading {
+    0% {
+      width: 0px;
+      height: 0px;
+    }
+    60% {
+      width: 100px;
+      height: 100px;
+    }
+    100% {
+      width: 0px;
+      height: 0px;
+    }
+  }
+  
+  @keyframes hideLoader {
+    0% {
+      visibility: visible;
+    }
+    100% {
+      visibility: hidden;
+    }
+  }
+  @keyframes showContent {
+    0% {
+      visibility: hidden;
+    }
+    100% {
+      visibility: visible;
+    }
+  }
+  
