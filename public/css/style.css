@@ -430,6 +430,30 @@ h2 {
   transition: opacity 800ms;
 }
 
+@keyframes dish_anim {
+  0% {
+    opacity: 0;
+    top: 20px;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+.dish1, .dish2, .dish3 {
+  position: relative;
+  opacity: 0;
+  animation: dish_anim 2000ms forwards;
+}
+
+.dish2 {
+  animation-delay: 400ms;
+}
+
+.dish3 {
+  animation-delay: 800ms;
+}
+
 #loaderContainer {
   position: absolute;
   height: 100px;
