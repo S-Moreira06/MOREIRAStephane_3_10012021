@@ -290,6 +290,7 @@ header img {
   animation: like 400ms forwards;
 }
 .restaurant_desc i {
+  cursor: pointer;
   grid-area: like;
   justify-self: end;
   align-self: center;
@@ -384,6 +385,7 @@ footer li:nth-child(2) i {
   animation: like 400ms forwards;
 }
 .menu_picture h1 i {
+  cursor: pointer;
   grid-area: like;
   justify-self: end;
   align-self: center;
