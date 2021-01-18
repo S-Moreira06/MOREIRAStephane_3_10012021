@@ -88,6 +88,26 @@ a {
     visibility: visible;
   }
 }
+@keyframes dish_anim {
+  0% {
+    opacity: 0;
+    top: 20px;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+@keyframes dish_choice {
+  100% {
+    transform: translateX(-65px);
+  }
+}
+@keyframes dish_rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
 :root {
   font-size: 15px;
 }
@@ -392,21 +412,45 @@ h2 {
   background-color: white;
   border-radius: 20px;
   margin-bottom: 1rem;
-  padding: 0.9rem;
+  padding: 0.5rem;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
   display: grid;
-  grid-template-areas: "name ." "comp price";
+  grid-template: 1.5rem 1.5rem/70% 30% 50px;
+  grid-template-areas: "name . select" "comp price select";
+  overflow: hidden;
+  white-space: nowrap;
 }
 .dish_name {
   grid-area: name;
   font-weight: bold;
 }
 .dish_comp {
+  display: inline-block;
   grid-area: comp;
 }
 .dish_price {
+  position: relative;
   grid-area: price;
   justify-self: end;
   font-weight: bold;
+}
+.dish_select {
+  grid-area: select;
+  justify-self: center;
+  align-self: center;
+  background-color: #99e2d0;
+  font-size: 1.5rem;
+  margin: -0.5rem -0.5rem -0.5rem 1.5rem;
+  padding: 1rem 1.4rem;
+  border-radius: 0 20px 20px 0;
+  color: #fff;
+  transform: translateX(0), rotate(0);
+}
+.dish:hover .dish_select, .dish:hover .dish_price {
+  animation: dish_choice 1s both;
+}
+.dish:hover .dish_select i, .dish:hover .dish_price i {
+  animation: dish_rotate 1s both;
 }
 
 .menu-btn {
@@ -424,20 +468,10 @@ h2 {
   transition: opacity 800ms;
 }
 
-@keyframes dish_anim {
-  0% {
-    opacity: 0;
-    top: 20px;
-  }
-  100% {
-    opacity: 1;
-    top: 0;
-  }
-}
 .dish1, .dish2, .dish3 {
   position: relative;
   opacity: 0;
-  animation: dish_anim 2000ms forwards;
+  animation: dish_anim 2000ms 1 forwards;
 }
 
 .dish2 {
