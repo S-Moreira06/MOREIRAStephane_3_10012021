@@ -57,10 +57,10 @@
 }
 @keyframes dish_choice {
   0% {
-
+      transform: translateX(0);
   }
   100% {
-      transform: translateX(-65px);
+      transform: translateX(-75px);
   }
 }
 

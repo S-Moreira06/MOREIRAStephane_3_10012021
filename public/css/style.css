@@ -113,8 +113,11 @@ a {
   }
 }
 @keyframes dish_choice {
+  0% {
+    transform: translateX(0);
+  }
   100% {
-    transform: translateX(-65px);
+    transform: translateX(-75px);
   }
 }
 @keyframes dish_rotate {
@@ -416,47 +419,44 @@ h2 {
   margin-bottom: 1rem;
   padding: 0.8rem;
   box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
-  display: grid;
-  grid-template: 1.5rem 1.5rem/80% 20% 50px;
-  grid-template-areas: "name . select" "comp price select";
+  display: flex;
   overflow: hidden;
-  white-space: nowrap;
+}
+.dish_text {
+  flex: 1;
+  overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .dish_name {
-  grid-area: name;
   font-weight: bold;
 }
 .dish_comp {
-  display: block;
-  grid-area: comp;
   overflow: hidden;
-  white-space: nowrap;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .dish_price {
-  position: relative;
-  grid-area: price;
-  justify-self: end;
   font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-left: 0.5rem;
 }
 .dish_select {
-  grid-area: select;
-  justify-self: center;
-  align-self: center;
   background-color: #99e2d0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 1.5rem;
-  margin: -0.8rem -0.8rem -0.8rem 2.2rem;
-  padding: 1.4rem 1.6rem;
+  margin: -0.8rem -5.2rem -0.8rem 1rem;
+  padding: 1rem 1.4rem;
   border-radius: 0 20px 20px 0;
   color: #fff;
-  transform: translateX(0), rotate(0);
+  transition-duration: 0.5s;
 }
-.dish:hover .dish_select, .dish:hover .dish_price {
-  animation: dish_choice 1s both;
-}
-.dish:hover .dish_select i, .dish:hover .dish_price i {
-  animation: dish_rotate 1s both;
+.dish:hover .dish_select {
+  margin-right: -1rem;
 }
 
 .menu-btn {
