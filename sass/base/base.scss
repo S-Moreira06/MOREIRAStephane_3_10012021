@@ -6,8 +6,8 @@ body {
     font-family: 'roboto', sans-serif;
 }
 
-.bloc_page, {
-    visibility: hidden;
-    animation: showContent 1ms 5000ms 1 forwards;
+.bloc_page {
+    opacity: 0;
+    animation: showContent 250ms 3000ms 1 forwards;
 }
 

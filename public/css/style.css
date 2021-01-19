@@ -74,32 +74,29 @@ a {
 }
 @keyframes loading {
   0% {
-    width: 0px;
-    height: 0px;
+    transform: translate(-50%, -50%) scale(0);
   }
   60% {
-    width: 100px;
-    height: 100px;
+    transform: translate(-50%, -50%) scale(1);
   }
   100% {
-    width: 0px;
-    height: 0px;
+    transform: translate(-50%, -50%) scale(0);
   }
 }
 @keyframes hideLoader {
   0% {
-    visibility: visible;
+    opacity: 1;
   }
   100% {
-    visibility: hidden;
+    opacity: 0;
   }
 }
 @keyframes showContent {
   0% {
-    visibility: hidden;
+    opacity: 0;
   }
   100% {
-    visibility: visible;
+    opacity: 1;
   }
 }
 @keyframes dish_anim {
@@ -134,8 +131,8 @@ body {
 }
 
 .bloc_page {
-  visibility: hidden;
-  animation: showContent 1ms 5000ms 1 forwards;
+  opacity: 0;
+  animation: showContent 250ms 3000ms 1 forwards;
 }
 
 header {
@@ -599,47 +596,45 @@ h2 {
   }
 }
 #loaderContainer {
-  position: absolute;
+  position: fixed;
   height: 100px;
   width: 100px;
-  margin: 20% 38%;
-  animation: hideLoader 1ms 5000ms 1 normal forwards;
-}
-@media screen and (min-width: 765px) {
-  #loaderContainer {
-    margin: 15% 45%;
-  }
-}
-
-.loader,
-.loader::before,
-.loader::after {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  animation: loading 2000ms backwards infinite ease-in-out alternate-reverse;
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  animation: hideLoader 250ms 3000ms normal forwards;
+  pointer-events: none;
 }
 
-.loader::before,
-.loader::after {
+.loader_purple,
+.loader_pink,
+.loader_green {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  animation: loading 2000ms backwards infinite ease-in-out;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%), scale(1);
+}
+
+.loader_pink,
+.loader_green {
   content: "";
   display: block;
 }
 
-.loader {
+.loader_purple {
   background-color: #9356DC;
 }
 
-.loader::before {
+.loader_pink {
   background-color: #FF79DA;
   animation-delay: 400ms;
 }
 
-.loader::after {
+.loader_green {
   background-color: #99E2D0;
   animation-delay: 800ms;
 }

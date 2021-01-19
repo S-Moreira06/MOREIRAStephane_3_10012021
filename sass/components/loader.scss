@@ -1,42 +1,43 @@
 #loaderContainer {
-  position: absolute;
+  position: fixed;
   height: 100px;
   width: 100px;
-  margin: 20% 38%;
-  animation: hideLoader 1ms 5000ms 1 normal forwards;
-  @include tablet-bp {
-    margin: 15% 45%;
-  }
-  
-}
-
-.loader,
-.loader::before,
-.loader::after {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  animation: loading 2000ms backwards infinite ease-in-out alternate-reverse;
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  animation: hideLoader 250ms 3000ms normal forwards;
+  pointer-events: none;
+  
+  
 }
 
-.loader::before,
-.loader::after {
+.loader_purple,
+.loader_pink,
+.loader_green {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  animation: loading 2000ms backwards infinite ease-in-out;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%), scale(1);
+}
+
+.loader_pink,
+.loader_green {
   content: '';
   display: block;
 }
 
-.loader {
+.loader_purple {
   background-color: #9356DC;
 }
-.loader::before {
+.loader_pink {
   background-color: #FF79DA;
   animation-delay: 400ms;
 }
-.loader::after {
+.loader_green {
   background-color: #99E2D0;
   animation-delay: 800ms;
 }

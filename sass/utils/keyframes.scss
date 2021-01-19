@@ -15,33 +15,32 @@
  //animation loader
 @keyframes loading {
   0% {
-    width: 0px;
-    height: 0px;
+    transform: translate(-50%, -50%) scale(0);
   }
   60% {
-    width: 100px;
-    height: 100px;
+    transform: translate(-50%, -50%) scale(1);
+
   }
   100% {
-    width: 0px;
-    height: 0px;
+    transform: translate(-50%, -50%) scale(0);
+
   }
 }
-  
+ 
 @keyframes hideLoader {
   0% {
-    visibility: visible;
+    opacity: 1;
   }
   100% {
-    visibility: hidden;
+    opacity: 0;
   }
 }
 @keyframes showContent {
   0% {
-    visibility: hidden;
+    opacity: 0;
   }
   100% {
-    visibility: visible;
+    opacity: 1;
   }
 }
 
