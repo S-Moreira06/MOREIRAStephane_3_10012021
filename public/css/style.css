@@ -68,7 +68,7 @@ a {
     opacity: 1;
   }
   100% {
-    transform: scale(1);
+    transform: scale(1.1);
     opacity: 1;
   }
 }
@@ -294,8 +294,13 @@ header img {
   grid-template-areas: "name like" "place like";
 }
 .restaurant_desc .fas {
-  color: #9356dc;
+  color: transparent;
   opacity: 0;
+}
+.restaurant_desc .fas::before {
+  background: linear-gradient(0deg, #9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 .restaurant_desc .fas:hover {
   animation: like 400ms forwards;
@@ -389,8 +394,13 @@ footer li:nth-child(2) i {
   grid-area: title;
 }
 .menu_picture h1 .fas {
-  color: #9356dc;
+  color: transparent;
   opacity: 0;
+}
+.menu_picture h1 .fas::before {
+  background: linear-gradient(0deg, #9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 .menu_picture h1 .fas:hover {
   animation: like 400ms forwards;
