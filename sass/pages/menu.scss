@@ -17,7 +17,7 @@
         grid-template-areas:
             "title like" ;
         font-family: 'shrikhand';
-        font-size: 1.3rem;
+        font-size: 1.9rem;
         position: absolute;
         bottom: 0rem;/*sans ca le text est soit trop haut soit trop bas*/
         background-color: #f6f6f6;
@@ -51,24 +51,27 @@ h2 {
     background-color: white;
     border-radius: 20px;
     margin-bottom: 1rem;
-    padding: 0.5rem;
+    padding: 0.8rem;
     box-shadow: 0.5rem 0.5rem 1rem rgba(0,0,0,0.2);
     display: grid;
-    grid-template: 1.5rem 1.5rem / 70% 30% 50px;
+    grid-template: 1.5rem 1.5rem / 80% 20% 50px;
     grid-template-areas: 
         "name . select"
         "comp price select";
     overflow: hidden;
     white-space: nowrap;
-    //text-overflow: ellipsis;
+    text-overflow: ellipsis;
     
     &_name {
         grid-area: name;
         font-weight: bold;
     }
     &_comp {
-        display: inline-block;
+        display: block;
         grid-area: comp;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
     &_price {
         position: relative;
@@ -83,8 +86,8 @@ h2 {
         align-self: center;
         background-color: $cd-tertiary;
         font-size: 1.5rem;
-        margin: -0.5rem -0.5rem -0.5rem 1.5rem;
-        padding: 1rem 1.4rem;
+        margin: -0.8rem -0.8rem -0.8rem 2.2rem;
+        padding: 1.4rem 1.6rem;
         border-radius: 0 20px 20px 0;
         color: #fff;
         transform: translateX(0), rotate(0);

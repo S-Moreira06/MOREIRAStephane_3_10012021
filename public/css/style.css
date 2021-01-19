@@ -58,6 +58,20 @@ a {
   src: url("../../public/font/roboto/roboto_regular/roboto-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../public/font/roboto/roboto_regular/roboto-regular-webfont.woff2") format("woff2"), url("../../public/font/roboto/roboto_regular/roboto-regular-webfont.woff") format("woff"), url("../../public/font/roboto/roboto_regular/roboto-regular-webfont.svg#roboto-regular-webfont") format("svg");
   font-weight: normal;
 }
+@keyframes like {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  75% {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 @keyframes loading {
   0% {
     width: 0px;
@@ -247,20 +261,6 @@ header img {
   padding: 0.2rem 0.5rem 0.25rem 0.5rem;
 }
 
-@keyframes like {
-  0% {
-    transform: scale(0);
-    opacity: 0;
-  }
-  75% {
-    transform: scale(1.5);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
 .restaurant {
   background-color: #f2f2f2;
   margin-top: 2rem;
@@ -367,7 +367,7 @@ footer li:nth-child(2) i {
   display: grid;
   grid-template-areas: "title like";
   font-family: "shrikhand";
-  font-size: 1.3rem;
+  font-size: 1.9rem;
   position: absolute;
   bottom: 0rem;
   /*sans ca le text est soit trop haut soit trop bas*/
@@ -414,21 +414,25 @@ h2 {
   background-color: white;
   border-radius: 20px;
   margin-bottom: 1rem;
-  padding: 0.5rem;
+  padding: 0.8rem;
   box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
   display: grid;
-  grid-template: 1.5rem 1.5rem/70% 30% 50px;
+  grid-template: 1.5rem 1.5rem/80% 20% 50px;
   grid-template-areas: "name . select" "comp price select";
   overflow: hidden;
   white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .dish_name {
   grid-area: name;
   font-weight: bold;
 }
 .dish_comp {
-  display: inline-block;
+  display: block;
   grid-area: comp;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .dish_price {
   position: relative;
@@ -442,8 +446,8 @@ h2 {
   align-self: center;
   background-color: #99e2d0;
   font-size: 1.5rem;
-  margin: -0.5rem -0.5rem -0.5rem 1.5rem;
-  padding: 1rem 1.4rem;
+  margin: -0.8rem -0.8rem -0.8rem 2.2rem;
+  padding: 1.4rem 1.6rem;
   border-radius: 0 20px 20px 0;
   color: #fff;
   transform: translateX(0), rotate(0);
@@ -498,7 +502,7 @@ h2 {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  animation: loading 2000ms backwards infinite ease-in-out alternate;
+  animation: loading 2000ms backwards infinite ease-in-out alternate-reverse;
   position: absolute;
   top: 50%;
   left: 50%;
