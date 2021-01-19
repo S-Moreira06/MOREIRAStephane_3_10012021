@@ -9,6 +9,7 @@
         font-size: 1.6rem;
         font-weight: 600;
         margin: 1.6rem 0 1.3rem 0;
+        grid-area: title;
     }
     img {
         border-radius: 20px 20px 0 0;
@@ -42,22 +43,37 @@
         border-radius: 20px;
         margin-bottom: 1.1rem;
         @include new;
+        grid-area: card1;
     }
     &_second {
         background-color: white;
         border-radius: 20px;
         margin-bottom: 1.1rem;
         @include new;
+        grid-area: card2;
     }
     &_third {
         background-color: white;
         border-radius: 20px;
         margin-bottom: 1.1rem;
+        grid-area: card3;
         
     }
     &_fourth {
         background-color: white;
         border-radius: 20px;
         margin-bottom: 1.1rem;
+        grid-area: card4;
+    }
+}
+
+@include tablet-bp {
+    .restaurant {
+        display: grid;
+        grid-template-areas: 
+            "title ."
+            "card1 card2"
+            "card3 card4";
+        grid-column-gap: 1rem;
     }
 }

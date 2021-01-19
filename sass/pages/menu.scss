@@ -5,6 +5,11 @@
         position: relative;
         top: 1.5rem;
         left: 2rem;
+        @include tablet-bp {
+            font-size: 2rem;
+            top: 3.2rem;
+            left: 5rem;
+        }
     }
 
 }
@@ -12,6 +17,13 @@
 //img
 .menu_picture {
     position: relative;
+    img {
+        @include tablet-bp {
+            object-fit: cover;
+            max-height: 20rem;
+            width: 100%;
+        }
+    }
     h1 {
         display: grid;
         grid-template-areas:
@@ -22,10 +34,13 @@
         bottom: 0rem;/*sans ca le text est soit trop haut soit trop bas*/
         background-color: #f6f6f6;
         border-radius: 30px 30px 0 0;
-        padding: 1rem ;
+        padding: 1.1rem ;
         width: 100%;
         grid-area: title;
         @include like;
+        @include tablet-bp {
+            bottom: -10px;
+        }
     }
 
 }
@@ -35,6 +50,7 @@
     background-color: #f6f6f6;
     padding: 1rem;
 }
+
 
 //plat
 h2 {
@@ -87,7 +103,6 @@ h2 {
         border-radius: 0 20px 20px 0;
         color: #fff;
         transition-duration: 0.5s;
-        
     }
     &:hover &_select {
         margin-right: -1rem;
@@ -127,5 +142,21 @@ h2 {
 }
 
 
-
-
+@include laptop-bp{
+    .container-menu {
+        display: grid;
+        grid-template-columns: repeat(3,32.5%);
+        column-gap: 1rem;
+        max-width: 100%;
+    }
+    .dish {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        &_text {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+}

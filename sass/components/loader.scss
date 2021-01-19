@@ -4,6 +4,10 @@
   width: 100px;
   margin: 20% 38%;
   animation: hideLoader 1ms 5000ms 1 normal forwards;
+  @include tablet-bp {
+    margin: 15% 45%;
+  }
+  
 }
 
 .loader,
@@ -35,10 +39,5 @@
 .loader::after {
   background-color: #99E2D0;
   animation-delay: 800ms;
-}
-
-.main_footer {
-  transform: translateY(0);
-  animation: footer  50ms 5000ms both;
 }
 
