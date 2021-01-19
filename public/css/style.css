@@ -542,6 +542,9 @@ h2 {
 .dish:hover .dish_select {
   margin-right: -1rem;
 }
+.dish:hover .dish_select i {
+  animation: dish_rotate 0.5s;
+}
 
 .menu-btn {
   display: flex;
