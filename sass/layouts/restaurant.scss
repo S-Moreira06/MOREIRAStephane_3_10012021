@@ -1,4 +1,6 @@
-
+.card {
+    position: relative;
+}
 .restaurant {
     background-color: #f2f2f2;
     margin-top: 2rem;
@@ -39,11 +41,13 @@
         background-color: white;
         border-radius: 20px;
         margin-bottom: 1.1rem;
+        @include new;
     }
     &_second {
         background-color: white;
         border-radius: 20px;
         margin-bottom: 1.1rem;
+        @include new;
     }
     &_third {
         background-color: white;

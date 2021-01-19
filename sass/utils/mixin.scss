@@ -21,3 +21,16 @@
 
     } 
 }
+
+@mixin new {
+    &::after {
+        display: block;
+        content: 'Nouveau';
+        background: $cd-tertiary;
+        position: absolute;
+        top: 8%;
+        left: 70%;
+        padding: 0.5rem;
+    }
+    
+}
