@@ -2,7 +2,7 @@
   position: absolute;
   height: 100px;
   width: 100px;
-  margin: 10% 50%;
+  margin: 20% 38%;
   animation: hideLoader 1ms 5000ms 1 normal forwards;
 }
 
@@ -35,5 +35,10 @@
 .loader::after {
   background-color: #99E2D0;
   animation-delay: 800ms;
+}
+
+.main_footer {
+  transform: translateY(0);
+  animation: footer  50ms 5000ms both;
 }
 
