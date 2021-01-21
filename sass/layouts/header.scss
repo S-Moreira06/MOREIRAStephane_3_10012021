@@ -3,5 +3,14 @@ header {
     img {
     margin: auto;
     width: 44%;
+    @include tablet-bp {
+        width: 30%;
+    }
+    @include laptop-bp {
+        width: 25%;
+    }
+    @include desktop-bp {
+        width: 20%;
+    }
     }
 }

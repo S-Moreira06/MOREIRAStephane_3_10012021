@@ -1,5 +1,18 @@
 .exploration {
     text-align: center;
+    grid-area: explo;
+    &_map {
+        display: none;
+        @include laptop-bp {
+            display: block;
+            background-color: #f6f6f6;
+            iframe {
+                width: 100%;
+                height: 450px;
+                border: none;
+            }
+        }
+    }
     &_location {
         color: #353535;
         background-color: #eaeaea;
