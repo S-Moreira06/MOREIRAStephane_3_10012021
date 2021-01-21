@@ -26,17 +26,29 @@
             }
         }
     }
-    &_first {
+    &_item {
+        font-weight: bold;
+        border-radius: 20px;
         background-color: #f6f6f6;
         padding: 1.8rem 0.9rem;
         margin-left: 0.5rem;
         margin-bottom: 1.5rem;
-        border-radius: 20px;
-        font-weight: bold;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0,0.3);
+        transition: all 600ms;
         i {
             margin-right: 1.7rem;
             font-size: 1.3rem;
         }
+        &:hover {
+            background-color: rgba(147,86,220,0.2);
+            box-shadow: 0px 6px 5px rgba(0, 0, 0,0.4);
+            i {
+                color: $cd-primary;
+            }
+            
+        }
+    }
+    &_first {
         &::before {
             content: "1";
             position: relative;
@@ -49,16 +61,6 @@
         }
     }
     &_second {
-        background-color: #f6f6f6;
-        padding: 1.8rem 0.9rem;
-        margin-left: 0.5rem;
-        margin-bottom: 1.5rem;
-        border-radius: 20px;
-        font-weight: bold;
-        i {
-            margin-right: 1.7rem;
-            font-size: 1.3rem;
-        }
         &::before {
             content: "2";
             position: relative;
@@ -71,16 +73,6 @@
         }
     }
     &_third {
-        background-color: #f5edff;
-        padding: 1.8rem 0.9rem;
-        margin-left: 0.5rem;
-        border-radius: 20px;
-        font-weight: bold;
-        i {
-            margin-right: 1.7rem;
-            font-size: 1.3rem;
-            color: $cd-primary;
-        }
         &::before {
             content: "3";
             position: relative;
