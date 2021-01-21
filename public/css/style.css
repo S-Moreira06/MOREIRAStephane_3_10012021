@@ -427,8 +427,12 @@ header img {
   .restaurant {
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "title . . ." "card1 card2 card3 card4";
-    margin-bottom: 2rem;
   }
+  .restaurant img {
+    height: 10rem;
+  }
+}
+@media screen and (min-width: 1400px) {
   .restaurant img {
     height: 13rem;
   }

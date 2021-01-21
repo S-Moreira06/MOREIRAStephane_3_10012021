@@ -90,7 +90,13 @@
         grid-template-areas: 
         "title . . ."
         "card1 card2 card3 card4";
-        margin-bottom: 2rem;
+        img {
+            height: 10rem;
+        }
+    }
+}
+@include desktop-bp {
+    .restaurant {
         img {
             height: 13rem;
         }
