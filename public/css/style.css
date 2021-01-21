@@ -216,10 +216,10 @@ header img {
   border: none;
   border-radius: 50px;
   padding: 1rem 1.5rem;
-  margin: 1rem;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   transition: all 600ms;
+  margin: 1rem;
 }
 .exploration_main-btn:hover {
   opacity: 0.7;
@@ -593,17 +593,19 @@ h2 {
 
 .menu-btn {
   display: flex;
+  margin: 2rem auto;
   background: linear-gradient(to bottom right, #ff79da, #9356dc);
   color: white;
   border: none;
   border-radius: 50px;
-  padding: 0.5rem 2rem;
-  margin: 2rem auto;
+  padding: 1rem 1.5rem;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
   cursor: pointer;
+  transition: all 600ms;
 }
 .menu-btn:hover {
   opacity: 0.7;
-  transition: opacity 800ms;
+  box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.5);
 }
 
 .dish1, .dish2, .dish3, .dish4 {
