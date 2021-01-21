@@ -157,9 +157,14 @@ header img {
 @media screen and (min-width: 1020px) {
   .search {
     display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 60% 40%;
     grid-template-areas: "explo work";
     margin: 0 3rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .search {
+    grid-template-columns: 70% 30%;
   }
 }
 

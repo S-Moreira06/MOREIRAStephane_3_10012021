@@ -1,8 +1,11 @@
 .search {
     @include laptop-bp {
         display: grid;
-        grid-template-columns: 70% 30%;
+        grid-template-columns: 60% 40%;
         grid-template-areas: "explo work";
         margin: 0 3rem;
+    }
+    @include desktop_bp {
+        grid-template-columns: 70% 30%;
     }
 }
