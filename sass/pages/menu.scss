@@ -16,41 +16,40 @@
 
 //img
 .menu_picture {
-    position: relative;
     img {
-        @include tablet-bp {
-            object-fit: cover;
-            max-height: 20rem;
-            width: 100%;
-        }
-    }
-    h1 {
-        display: grid;
-        grid-template-areas:
-            "title like" ;
-        font-family: 'shrikhand';
-        font-size: 1.9rem;
-        position: absolute;
-        bottom: 0rem;/*sans ca le text est soit trop haut soit trop bas*/
-        background-color: #f6f6f6;
-        border-radius: 30px 30px 0 0;
-        padding: 1.1rem ;
+        object-fit: cover;
+        height: 16rem;
         width: 100%;
-        grid-area: title;
-        @include like;
         @include tablet-bp {
-            bottom: -10px;
+            height: 20rem;
         }
     }
-
 }
 //bloc_page
 
 .bloc_page-menu {
     background-color: #f6f6f6;
     padding: 1rem;
+    border-radius: 30px 30px 0 0;
+    position: relative;
+    top: -50px;
+    @include laptop-bp {
+        margin: 0 2rem;
+    }
+    @include desktop-bp {
+        margin: 0 5rem;
+    }
+    h1 {
+        display: grid;
+        grid-template-areas:
+            "title like" ;
+        font-family: 'shrikhand';
+        font-size: 1.6rem;
+        padding: 1.1rem ;
+        grid-area: title;
+        @include like;
+    }
 }
-
 
 //plat
 h2 {
@@ -144,7 +143,11 @@ h2 {
     animation-delay: 1200ms;
 }
 
+//footer menu
 
+.menu_footer {
+    margin-top: -50px;
+}
 @include laptop-bp{
     .container-menu {
         display: grid;

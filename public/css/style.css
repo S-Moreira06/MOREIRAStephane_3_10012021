@@ -469,59 +469,61 @@ footer li:nth-child(2) i {
   }
 }
 
-.menu_picture {
-  position: relative;
+.menu_picture img {
+  object-fit: cover;
+  height: 16rem;
+  width: 100%;
 }
 @media screen and (min-width: 765px) {
   .menu_picture img {
-    object-fit: cover;
-    max-height: 20rem;
-    width: 100%;
-  }
-}
-.menu_picture h1 {
-  display: grid;
-  grid-template-areas: "title like";
-  font-family: "shrikhand";
-  font-size: 1.9rem;
-  position: absolute;
-  bottom: 0rem;
-  /*sans ca le text est soit trop haut soit trop bas*/
-  background-color: #f6f6f6;
-  border-radius: 30px 30px 0 0;
-  padding: 1.1rem;
-  width: 100%;
-  grid-area: title;
-}
-.menu_picture h1 .fas {
-  color: transparent;
-  opacity: 0;
-}
-.menu_picture h1 .fas::before {
-  background: linear-gradient(0deg, #9356dc, #ff79da);
-  background-clip: text;
-  -webkit-background-clip: text;
-}
-.menu_picture h1 .fas:hover {
-  animation: like 400ms forwards;
-}
-.menu_picture h1 i {
-  cursor: pointer;
-  grid-area: like;
-  justify-self: end;
-  align-self: center;
-  font-size: 1.8rem;
-  margin-right: 1.5rem;
-}
-@media screen and (min-width: 765px) {
-  .menu_picture h1 {
-    bottom: -10px;
+    height: 20rem;
   }
 }
 
 .bloc_page-menu {
   background-color: #f6f6f6;
   padding: 1rem;
+  border-radius: 30px 30px 0 0;
+  position: relative;
+  top: -50px;
+}
+@media screen and (min-width: 1020px) {
+  .bloc_page-menu {
+    margin: 0 2rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .bloc_page-menu {
+    margin: 0 5rem;
+  }
+}
+.bloc_page-menu h1 {
+  display: grid;
+  grid-template-areas: "title like";
+  font-family: "shrikhand";
+  font-size: 1.6rem;
+  padding: 1.1rem;
+  grid-area: title;
+}
+.bloc_page-menu h1 .fas {
+  color: transparent;
+  opacity: 0;
+}
+.bloc_page-menu h1 .fas::before {
+  background: linear-gradient(0deg, #9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.bloc_page-menu h1 .fas:hover {
+  animation: like 400ms forwards;
+}
+.bloc_page-menu h1 i {
+  cursor: pointer;
+  grid-area: like;
+  justify-self: end;
+  align-self: center;
+  font-size: 1.8rem;
+  margin-right: 1.5rem;
 }
 
 h2 {
@@ -616,6 +618,10 @@ h2 {
 
 .dish4 {
   animation-delay: 1200ms;
+}
+
+.menu_footer {
+  margin-top: -50px;
 }
 
 @media screen and (min-width: 1020px) {
