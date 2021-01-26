@@ -1,3 +1,4 @@
+
 @mixin like {
     .fas {
         color: transparent;
@@ -40,12 +41,12 @@
     border: none;
     border-radius: 50px;
     padding: 1rem 1.5rem;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0,0.3);
+    box-shadow: $shadow;
     cursor: pointer;
     transition: all 600ms;
     &:hover {
         opacity: 0.7;
-        box-shadow: 0px 6px 5px rgba(0, 0, 0,0.5);
+        box-shadow: $shadow-hover;
     }
 }
 

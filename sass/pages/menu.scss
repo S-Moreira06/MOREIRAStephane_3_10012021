@@ -67,7 +67,7 @@ h2 {
     border-radius: 20px;
     margin-bottom: 1rem;
     padding: 0.8rem;
-    box-shadow: 0.5rem 0.5rem 1rem rgba(0,0,0,0.2); 
+    box-shadow: $shadow; 
     display: flex;
     overflow: hidden;
     &_text {
