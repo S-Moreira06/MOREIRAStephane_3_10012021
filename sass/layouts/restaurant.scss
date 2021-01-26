@@ -1,11 +1,16 @@
 .card {
     position: relative;
+    box-shadow: $shadow;
+    transition: all 600ms;
+    &:hover {
+        box-shadow: $shadow-hover;
+    }
 }
 .restaurant {
     background-color: #f2f2f2;
     margin-top: 2rem;
     padding: 2rem 1.3rem 3.5rem 1.3rem;
-    &_title {
+    h2 {
         font-size: 1.6rem;
         font-weight: 600;
         margin: 1.6rem 0 1.3rem 0;

@@ -279,7 +279,7 @@ header img {
 }
 .working_item:hover {
   background-color: rgba(147, 86, 220, 0.2);
-  box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.5);
 }
 .working_item:hover i {
   color: #9356dc;
@@ -314,6 +314,11 @@ header img {
 
 .card {
   position: relative;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+  transition: all 600ms;
+}
+.card:hover {
+  box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.5);
 }
 
 .restaurant {
@@ -321,7 +326,7 @@ header img {
   margin-top: 2rem;
   padding: 2rem 1.3rem 3.5rem 1.3rem;
 }
-.restaurant_title {
+.restaurant h2 {
   font-size: 1.6rem;
   font-weight: 600;
   margin: 1.6rem 0 1.3rem 0;
@@ -552,7 +557,7 @@ h2 {
   border-radius: 20px;
   margin-bottom: 1rem;
   padding: 0.8rem;
-  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
   display: flex;
   overflow: hidden;
 }
