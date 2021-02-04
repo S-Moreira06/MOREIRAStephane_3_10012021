@@ -23,6 +23,11 @@ footer {
         }
         ul {
             margin: auto;
+            text-align: center;
+            display: grid;
+            grid-template: 1fr 1fr/1fr 1fr;
+            grid-column-gap: 15vw;
+            grid-row-gap: 1rem;
         }
     }
 }
