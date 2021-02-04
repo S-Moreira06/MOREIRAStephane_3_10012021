@@ -16,4 +16,13 @@ footer {
         font-size: 0.6rem;
         margin-right: 0.91rem;
     }
+    @include tablet-bp {
+        display: flex;
+        h1 {
+            font-size: 3em;
+        }
+        ul {
+            margin: auto;
+        }
+    }
 }

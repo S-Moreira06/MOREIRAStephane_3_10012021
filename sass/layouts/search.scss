@@ -1,8 +1,11 @@
 .search {
+    text-align: center;
     @include laptop-bp {
         display: grid;
         grid-template-columns: 60% 40%;
-        grid-template-areas: "explo work";
+        grid-template-areas: 
+            "explo work"
+            "desc desc";
         margin: 0 3rem;
     }
     @include desktop_bp {
@@ -13,7 +16,6 @@
 //exploration
 
 .exploration {
-    text-align: center;
     grid-area: explo;
     &_map {
         display: none;
@@ -39,26 +41,28 @@
             margin-right: 1rem;
         }
     }
-    &_main {
-        background-color: #f6f6f6;
-        padding: 2.6rem;
-        &-title {
-            padding: 0 0.8rem;
-            font-weight: 800;
-            font-size: 1.55rem;
-            line-height: 1.7rem;
-        }
-        &-desc {
-            margin-top: 1rem;
-            margin-bottom: 1rem;
-            font-size: 1.15rem;
-        }
-        &-btn {
-            @include order-btn;
-            margin: 1rem;
-        }
+}
+.desc {
+    background-color: #f6f6f6;
+    padding: 2.6rem;
+    grid-area: desc;
+    &_title {
+        padding: 0 0.8rem;
+        font-weight: 800;
+        font-size: 1.55rem;
+        line-height: 1.7rem;
+    }
+    &_text {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1.15rem;
+    }
+    &_btn {
+        @include order-btn;
+        margin: 1rem;
     }
 }
+
 
 //working (fonctionnement)
 
@@ -79,14 +83,14 @@
             border-top: 1px solid #cecece;
             padding: 0.6rem;
             text-align: center;
-            margin-bottom: 10rem;
+            margin-bottom: 5rem;
         }
     }
     ol {
         @include laptop-bp {
             margin: 1rem;
             li {
-                margin-bottom: 5rem;
+                margin-bottom: 2rem;
             }
         }
     }
@@ -121,7 +125,6 @@
             color: white;
             border-radius: 50%;
             padding: 0.2rem 0.5rem 0.25rem 0.5rem;
-
         }
     }
     &_second {

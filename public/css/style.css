@@ -138,44 +138,46 @@ header img {
   margin: auto;
   width: 44%;
 }
-@media screen and (min-width: 765px) {
+@media screen and (min-width: 700px) {
   header img {
     width: 30%;
   }
 }
-@media screen and (min-width: 1020px) {
+@media screen and (min-width: 900px) {
   header img {
     width: 25%;
   }
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1300px) {
   header img {
     width: 20%;
   }
 }
 
-@media screen and (min-width: 1020px) {
+.search {
+  text-align: center;
+}
+@media screen and (min-width: 900px) {
   .search {
     display: grid;
     grid-template-columns: 60% 40%;
-    grid-template-areas: "explo work";
+    grid-template-areas: "explo work" "desc desc";
     margin: 0 3rem;
   }
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1300px) {
   .search {
     grid-template-columns: 70% 30%;
   }
 }
 
 .exploration {
-  text-align: center;
   grid-area: explo;
 }
 .exploration_map {
   display: none;
 }
-@media screen and (min-width: 1020px) {
+@media screen and (min-width: 900px) {
   .exploration_map {
     display: block;
     background-color: #f6f6f6;
@@ -200,22 +202,24 @@ header img {
   content: "";
   margin-right: 1rem;
 }
-.exploration_main {
+
+.desc {
   background-color: #f6f6f6;
   padding: 2.6rem;
+  grid-area: desc;
 }
-.exploration_main-title {
+.desc_title {
   padding: 0 0.8rem;
   font-weight: 800;
   font-size: 1.55rem;
   line-height: 1.7rem;
 }
-.exploration_main-desc {
+.desc_text {
   margin-top: 1rem;
   margin-bottom: 1rem;
   font-size: 1.15rem;
 }
-.exploration_main-btn {
+.desc_btn {
   background: linear-gradient(to bottom right, #ff79da, #9356dc);
   color: white;
   border: none;
@@ -226,7 +230,7 @@ header img {
   transition: all 600ms;
   margin: 1rem;
 }
-.exploration_main-btn:hover {
+.desc_btn:hover {
   opacity: 0.7;
   box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.5);
 }
@@ -235,7 +239,7 @@ header img {
   margin: 3.2rem 1.3rem 4.2rem 1.3rem;
   grid-area: work;
 }
-@media screen and (min-width: 1020px) {
+@media screen and (min-width: 900px) {
   .working {
     margin: 0;
     background-color: #eaeaea;
@@ -246,21 +250,21 @@ header img {
   font-weight: 800;
   margin-bottom: 1.8rem;
 }
-@media screen and (min-width: 1020px) {
+@media screen and (min-width: 900px) {
   .working_title {
     background-color: #f6f6f6;
     border-top: 1px solid #cecece;
     padding: 0.6rem;
     text-align: center;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
   }
 }
-@media screen and (min-width: 1020px) {
+@media screen and (min-width: 900px) {
   .working ol {
     margin: 1rem;
   }
   .working ol li {
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
   }
 }
 .working_item {
@@ -425,7 +429,7 @@ header img {
   grid-area: card4;
 }
 
-@media screen and (min-width: 765px) {
+@media screen and (min-width: 700px) {
   .restaurant {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -433,7 +437,7 @@ header img {
     grid-column-gap: 1rem;
   }
 }
-@media screen and (min-width: 1020px) {
+@media screen and (min-width: 900px) {
   .restaurant {
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "title . . ." "card1 card2 card3 card4";
@@ -442,7 +446,7 @@ header img {
     height: 10rem;
   }
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1300px) {
   .restaurant img {
     height: 13rem;
   }
@@ -466,6 +470,17 @@ footer li:nth-child(2) i {
   font-size: 0.6rem;
   margin-right: 0.91rem;
 }
+@media screen and (min-width: 700px) {
+  footer {
+    display: flex;
+  }
+  footer h1 {
+    font-size: 3em;
+  }
+  footer ul {
+    margin: auto;
+  }
+}
 
 .menu_header {
   margin: 0 auto 1rem auto;
@@ -475,7 +490,7 @@ footer li:nth-child(2) i {
   top: 1.5rem;
   left: 2rem;
 }
-@media screen and (min-width: 765px) {
+@media screen and (min-width: 700px) {
   .menu_header i {
     font-size: 2rem;
     top: 3.2rem;
@@ -488,7 +503,7 @@ footer li:nth-child(2) i {
   height: 16rem;
   width: 100%;
 }
-@media screen and (min-width: 765px) {
+@media screen and (min-width: 700px) {
   .menu_picture img {
     height: 20rem;
   }
@@ -501,12 +516,12 @@ footer li:nth-child(2) i {
   position: relative;
   top: -50px;
 }
-@media screen and (min-width: 1020px) {
+@media screen and (min-width: 900px) {
   .bloc_page-menu {
     margin: 0 2rem;
   }
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1300px) {
   .bloc_page-menu {
     margin: 0 5rem;
   }
@@ -640,7 +655,7 @@ h2 {
   margin-top: -50px;
 }
 
-@media screen and (min-width: 1020px) {
+@media screen and (min-width: 900px) {
   .container-menu {
     display: grid;
     grid-template-columns: repeat(3, 32.5%);

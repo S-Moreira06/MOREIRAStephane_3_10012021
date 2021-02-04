@@ -51,19 +51,19 @@
 }
 
 @mixin tablet-bp {
-    @media screen and (min-width:765px){
+    @media screen and (min-width:700px){
         @content
     }
 };
 
 @mixin laptop-bp {
-    @media screen and (min-width:1020px){
+    @media screen and (min-width:900px){
         @content
     }
 };
 
 @mixin desktop-bp {
-    @media screen and (min-width:1400px){
+    @media screen and (min-width:1300px){
         @content
     }
 }
