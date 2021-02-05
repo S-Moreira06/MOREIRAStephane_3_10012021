@@ -20,14 +20,22 @@ footer {
         display: flex;
         h1 {
             font-size: 3em;
+            margin-right: 1rem;
         }
         ul {
+            	
+            white-space:nowrap;
             margin: auto;
             text-align: center;
             display: grid;
             grid-template: 1fr 1fr/1fr 1fr;
             grid-column-gap: 15vw;
             grid-row-gap: 1rem;
+            @include desktop-bp {
+                display: flex;
+                grid-column-gap: 10vw;
+            }
+
         }
     }
 }

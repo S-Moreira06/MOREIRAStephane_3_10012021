@@ -1,5 +1,5 @@
 .search {
-    text-align: center;
+    
     @include laptop-bp {
         display: grid;
         grid-template-columns: 60% 40%;
@@ -43,6 +43,7 @@
     }
 }
 .desc {
+    text-align: center;
     background-color: #f6f6f6;
     padding: 2.6rem;
     grid-area: desc;

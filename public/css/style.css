@@ -154,9 +154,6 @@ header img {
   }
 }
 
-.search {
-  text-align: center;
-}
 @media screen and (min-width: 900px) {
   .search {
     display: grid;
@@ -204,6 +201,7 @@ header img {
 }
 
 .desc {
+  text-align: center;
   background-color: #f6f6f6;
   padding: 2.6rem;
   grid-area: desc;
@@ -476,14 +474,22 @@ footer li:nth-child(2) i {
   }
   footer h1 {
     font-size: 3em;
+    margin-right: 1rem;
   }
   footer ul {
+    white-space: nowrap;
     margin: auto;
     text-align: center;
     display: grid;
     grid-template: 1fr 1fr/1fr 1fr;
     grid-column-gap: 15vw;
     grid-row-gap: 1rem;
+  }
+}
+@media screen and (min-width: 700px) and (min-width: 1300px) {
+  footer ul {
+    display: flex;
+    grid-column-gap: 10vw;
   }
 }
 
